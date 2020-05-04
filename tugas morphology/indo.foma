@@ -1,0 +1,26 @@
+# Vowels
+define Vokal [a | e | i | o | u ];
+
+read lexc indo.lexc
+define Lexicon;
+
+define NInsertion [..] -> men || .#. _ c|j|d|z ;
+define KReplacement k -> meng || .#. _ ;
+define NGInsertion [..] -> meng || .#. _ Vokal|g|h|q ;
+define PReplacement p -> mem || .#. _ ;
+define SReplacement s -> meny || .#. _ ;
+define TReplacement t -> men || .#. _ ;
+define MInsertion [..] -> mem || .#. _ b|f|v ;
+define MEInsertion [..] -> me || .#. _ l|m|r|n|w|x|y ;
+define Cleanup "^" -> 0;
+
+regex Lexicon .o.
+      NInsertion .o.
+      NGInsertion .o.
+      KReplacement .o.
+      PReplacement .o.
+      SReplacement .o.
+      TReplacement .o.
+      MInsertion .o.
+      MEInsertion .o.
+      Cleanup;

@@ -1,0 +1,51 @@
+Multichar_Symbols +N +V +A +I +T +P me+
+
+LEXICON Root
+
+Noun ;
+Verb ;
+Adjective ;
+
+LEXICON Noun
+
+data		N;
+sikat		N;
+fitnah		N;
+verifikasi	N;
+rampok		N;
+nafkah		N;
+wadah		N;
+
+LEXICON Verb
+
+kirim	V;
+ikat	V;
+goreng	V;
+hilang	V;
+curi  	V;
+pasang	V;
+tanam	V;
+jahit	V;
+lihat	V;
+
+LEXICON Adjective
+
+zalim	A;
+beku	A;
+yakin	A;
+
+LEXICON N
+
++N+T:0		#;
+
+LEXICON V
+
++V+T:0		#;
+
+LEXICON A
+
++A+I:i		#;
++A+I:0		#;
+
+
+
